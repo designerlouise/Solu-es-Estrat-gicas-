@@ -5,60 +5,88 @@ body {
   color: white;
   text-align: center;
 }
+
 .container {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
 }
+
+/* FOTO DE PERFIL COM ELEVAÇÃO */
 .perfil-img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.perfil-img:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.15);
+}
+
 h1 {
   font-size: 2rem;
   margin: 10px 0;
 }
+
 .subtitulo {
   font-size: 1rem;
   color: #ccc;
 }
+
 .descricao {
   margin: 20px 0 40px;
   font-size: 1.1rem;
   color: #bbb;
 }
+
+/* TABELA COM ELEVAÇÃO NAS CÉLULAS */
 table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 40px;
 }
+
 th, td {
   padding: 15px;
   border: 1px solid #33425b;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 th {
   background-color: #1a2c44;
   color: #fff;
 }
+
 td {
   background-color: #132238;
   color: #ddd;
   text-align: left;
 }
+
+td:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 15px rgba(255, 255, 255, 0.08);
+}
+
+/* ÍCONES COM ANIMAÇÃO */
 .icones-contato {
   display: flex;
   justify-content: center;
   gap: 20px;
   margin-bottom: 20px;
 }
+
 .icones-contato img {
   width: 30px;
   height: 30px;
-  transition: transform 0.2s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .icones-contato img:hover {
-  transform: scale(1.1);
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2);
 }
